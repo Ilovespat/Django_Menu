@@ -1,2 +1,2 @@
-Django, JS, CSS, HTML, SQLite
+Django, JS, CSS, HTML, SQLite. 
 Тестовое задание. 
