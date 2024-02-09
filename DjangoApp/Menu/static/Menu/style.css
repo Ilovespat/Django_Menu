@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+
+/* Menu container */
+.menu	{
+    height: 100vh;
+    width: 350px;
+	padding:10px 5px 10px 5px;
+	margin:0px 12px 12px 0px;
+	font-size: 1.2rem;
+	background-color: #0885c7;
+    text-color: #000000;
+	}
+
+/* Menu styles */
+.menu ul
+	{
+	margin:0px;
+	padding:0px;
+	}
+.menu li
+	{
+	margin:0px 0px 0px 10px;
+	padding:0px;
+	list-style-type:none;
+	text-align:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-weight:normal;
+	}
+
+/*размещение меню по середине, отмена декорирования текста, белый цвет текста, фиксация отступов, указатель при наведении палец*/
+.menu a,
+.menu strong {
+  text-decoration: none;
+  color: #eee;
+  display: block;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+/*подсвечивает строку, на которую наводимся*/
+.menu a:hover,
+.menu strong:hover {
+  background-color: #0aab81;
+}
+
+/*выбранный пункт другого цвета*/
+.menu strong {
+  color: #a7d561;
+}
+
+/* Submenu styles */
+.menu ul ul
+	{ background-color:#0885c7; }
+.menu li li
+	{ margin:0px 0px 0px 16px; }
+
+/* Symbol styles */
+.menu .symbol-item,
+.menu .symbol-open,
+.menu .symbol-close	{
+	float:left;
+	width:16px;
+	height:16px;
+	padding: 5px 5px;
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.menu .symbol-item  { background-image:url(icons/page.png); }
+.menu .symbol-open  { background-image:url(icons/minus.png); }
+.menu .symbol-close { background-image:url(icons/plus.png);}
+
+/* Menu line styles */
+.menu li.open  { font-weight:bold; }
+.menu li.close { font-weight:normal; }
+
+.menu li.open > a {
+    color: #a7d561;
+}

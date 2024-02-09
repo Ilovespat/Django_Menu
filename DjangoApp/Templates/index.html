@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'Menu/style.css' %}" />
+    <script src="static/Menu/TreeMenu.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="menu">
+      {% load menu_tag %}
+      {% draw_menu 'main_menu' %}
+      <script type="text/javascript">make_tree_menu('example1', 0, 0, 1);</script>
+  </div>
+  </body>
+</html>
